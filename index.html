@@ -5,317 +5,303 @@
 <title>Study Group | Korean Drama</title>
 
 <style>
-:root{
-  --maroon:#7b1e3a;
-  --pink:#ff6f91;
-  --bg:#1a0e14;
-  --card:#241018;
-  --soft:#f5d7df;
-}
-
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family:'Segoe UI',Arial,sans-serif;
-  background:linear-gradient(180deg,#2a121a,#14080c);
-  color:#f1f1f1;
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #1a0e14;
+    color: #f7f2f4;
 }
 
 /* HEADER */
-header{
-  background:
-    linear-gradient(rgba(26,10,16,.85),rgba(26,10,16,.85)),
-    url("img/header-bg.jpg") center/cover;
-  padding:70px 20px;
-  text-align:center;
-  border-bottom:4px solid var(--maroon);
+header {
+    background: linear-gradient(135deg, #8b2d4a, #4a1627);
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff8fab;
 }
-header h1{
-  font-size:42px;
-  letter-spacing:4px;
-  margin:0;
-  color:#ffe6ec;
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
 }
-header p{
-  color:#ffd6df;
-  margin-top:10px;
+
+header p {
+    color: #ffe0ea;
+}
+    .hero {
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+        url("header.jpg") center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff8fab;
 }
 
 /* NAV */
-nav{
-  background:#12060a;
-  text-align:center;
-  padding:14px;
+nav {
+    background-color: #2b111a;
+    padding: 14px;
+    text-align: center;
 }
-nav a{
-  color:var(--soft);
-  margin:0 14px;
-  text-decoration:none;
-  font-weight:bold;
+
+nav a {
+    color: #ffd1dc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
-nav a:hover{color:var(--pink)}
+
+nav a:hover {
+    color: #ff8fab;
+}
 
 /* SECTION */
-section{padding:36px 22px}
-.section-title{
-  text-align:center;
-  font-size:26px;
-  margin-bottom:26px;
-  color:#ff8fab;
+section {
+    padding: 35px 20px;
 }
 
-/* CARD */
-.card{
-  background:var(--card);
-  border-radius:16px;
-  padding:24px;
-  margin-bottom:30px;
-  box-shadow:0 0 20px rgba(123,30,58,.35);
+.card {
+    background: linear-gradient(180deg, #3a1622, #2a0f18);
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 25px rgba(255,143,171,0.35);
 }
 
-/* STORY */
-.story p{
-  line-height:1.7;
-  text-align:justify;
+.card h2 {
+    color: #ffb3c6;
+    text-align: center;
 }
-
-/* CHARACTER GRID */
-.char-group{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:22px;
-}
-.char-card{
-  background:#2a131c;
-  border-radius:18px;
-  padding:18px;
-  text-align:center;
-  position:relative;
-}
-.char-card img{
-  width:110px;
-  height:110px;
-  object-fit:cover;
-  border-radius:50%;
-  border:3px solid var(--pink);
-}
-.char-card h3{
-  margin:12px 0 6px;
-  color:#ffb3c6;
-}
-.char-card p{
-  font-size:14px;
-  line-height:1.5;
-}
-
-/* LABEL */
-.label{
-  position:absolute;
-  top:12px;
-  right:12px;
-  font-size:11px;
-  padding:4px 10px;
-  border-radius:12px;
-  background:var(--pink);
-  color:#000;
-  font-weight:bold;
-}
-.antagonis .label{background:#ff4d6d}
-.antihero .label{background:#ffd166}
 
 /* POSTER */
-.poster img{
-  width:260px;
-  display:block;
-  margin:18px auto;
-  border-radius:16px;
-  border:3px solid var(--maroon);
+.poster img {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 16px;
+    border: 3px solid #ff8fab;
 }
 
-/* AUDIO */
-.audio-box{
-  text-align:center;
-}
-.audio-box img{
-  width:180px;
-  border-radius:50%;
-  animation:spin 14s linear infinite;
-  margin-bottom:16px;
-}
-@keyframes spin{
-  from{transform:rotate(0)}
-  to{transform:rotate(360deg)}
+/* CHARACTERS */
+.characters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
 }
 
-/* FOOTER */
-footer{
-  background:#080408;
-  text-align:center;
-  padding:20px;
-  font-size:14px;
-  color:#d6b2bb;
-  border-top:3px solid var(--maroon);
+.character {
+    background-color: #4a1c2b;
+    border-radius: 16px;
+    padding: 15px;
 }
+
+.character img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ff8fab;
+}
+
+.character h3 {
+    margin: 10px 0 5px;
+    color: #ffd6e2;
+}
+
+.character p {
+    font-size: 13px;
+    
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>STUDY GROUP</h1>
-  <p>Belajar adalah perlawanan di sekolah paling brutal</p>
+<header class="hero">
+    <h1>스터디그룹</h1>
+    <p>Drama Korea — Study Group 2025</p>
 </header>
 
 <nav>
-  <a href="#about">Tentang</a>
-  <a href="#story">Alur</a>
-  <a href="#characters">Karakter</a>
-  <a href="#ost">OST</a>
+    <a href="#trailer">Official Trailer</a>
+    <a href="#about">About</a>
+    <a href="#story">Synopsis</a>
+    <a href="#characters">Characters</a>
+    <a href="#ost">OST</a>
 </nav>
+    
+<section id="trailer">
+<div class="card">
+<h2>Official Trailer</h2>
+
+<div style="display:flex; justify-content:center;">
+<iframe 
+    width="560" 
+    height="315"
+    src="https://www.youtube.com/embed/VT1HzyQhCro"
+    allowfullscreen>
+</iframe>
+</div>
+
+<p style="text-align:center; margin-top:10px;">
+✏️ Study Group Official Trailer 📒
+</p>
+
+
+
+</div>
+</section>
 
 <section id="about">
-  <h2 class="section-title">Tentang Drama</h2>
-  <div class="card story">
-    <p>
-      <b>Study Group</b> adalah drama Korea adaptasi webtoon populer yang
-      mengangkat realita keras kehidupan sekolah penuh kekerasan dan intimidasi.
-      Drama ini mengikuti Yoon Ga Min, siswa dengan cita-cita sederhana:
-      belajar dengan sungguh-sungguh dan masuk universitas.
-    </p>
-    <p>
-      Melalui perpaduan aksi laga intens, persahabatan, dan tema pendidikan,
-      drama ini menunjukkan bahwa belajar bisa menjadi bentuk perlawanan
-      terhadap sistem yang tidak adil.
-    </p>
-
-    <p><b>Platform Resmi:</b> Vidio & Viu</p>
-  </div>
+<div class="card">
+<h2>Tentang Drama</h2>
+<p>
+<b>Study Group</b> adalah drama Korea adaptasi webtoon populer. Study Group adalah drama Korea adaptasi dari webtoon populer yang mengangkat realita keras kehidupan di sekolah dengan lingkungan penuh kekerasan, intimidasi, dan siswa bermasalah. Drama ini berfokus pada perjuangan Yoon Ga-Min, seorang siswa yang bercita-cita sederhana namun sulit diwujudkan — belajar dengan sungguh-sungguh dan masuk universitas. Di tengah sekolah yang lebih menghargai kekuatan fisik daripada prestasi akademik, keinginan untuk belajar justru dianggap aneh dan lemah. 
+</p>
+    
+<p>
+Melalui perpaduan aksi laga yang intens, kisah persahabatan yang kuat, dan tema pendidikan yang menyentuh, Study Group menunjukkan bahwa belajar bisa menjadi bentuk perlawanan terhadap sistem dan lingkungan yang tidak mendukung. Drama ini tidak hanya menampilkan pertarungan fisik, tetapi juga perjuangan mental, ketekunan, serta solidaritas antar siswa yang sama-sama ingin mengubah masa depan mereka. Dengan begitu, Study Group menyampaikan pesan bahwa pendidikan, keberanian, dan tekad dapat menjadi senjata untuk melawan kerasnya realitas hidup.
+</p>
+</div>
 </section>
 
 <section id="story">
-  <h2 class="section-title">Alur Cerita</h2>
-  <div class="card story">
-    <p>
-      Yoon Ga Min adalah siswa baru di SMK Teknik Yusung,
-      sekolah yang terkenal brutal dan penuh siswa bermasalah.
-      Meski terlihat seperti siswa teladan, ia selalu berada di peringkat terbawah.
-      Kekurangannya dalam akademik ditutupi dengan kemampuan bertarung luar biasa.
-    </p>
-    <p>
-      Demi masa depan, Ga Min membentuk kelompok belajar.
-      Namun niat sederhana itu menyeret mereka ke konflik
-      dengan siswa berandalan dan organisasi gelap sekolah.
-      Setiap ancaman dihadapi Ga Min demi melindungi kelompok belajarnya.
-    </p>
-  </div>
+<div class="card">
+<h2>Alur Cerita</h2>
+<p>
+Yoon Ga-min adalah seorang siswa di SMK Teknik Yusung yang baru saja masuk, sebuah sekolah menengah kejuruan yang dikenal keras dan penuh dengan siswa bermasalah serta kekerasan. Ia memiliki penampilan seperti siswa teladan—berkacamata, berpakaian rapi, dan berwajah polos—namun berbanding terbalik dengan kondisi akademiknya yang selalu berada di peringkat paling bawah di sekolah. Meskipun bercita-cita untuk masuk universitas dan meraih prestasi akademik, kemampuan belajarnya sangat rendah. Namun, kekurangan tersebut ia tutupi dengan kemampuan bertarung yang luar biasa dan kekuatan fisik yang mengagumkan. Demi mengubah masa depannya, Yoon Ga-min membentuk sebuah kelompok belajar, bersama teman-temannya yang ia temui, dengan harapan bisa meningkatkan nilai dan fokus pada pendidikan.
+</p>
+
+<p>
+Sayangnya, niat sederhana itu justru menyeret dirinya dan anggota kelompok belajarnya ke dalam berbagai konflik dengan siswa berandalan dan bahkan organisasi gelap di sekolah. Setiap kali anggota kelompok belajarnya berada dalam masalah, Yoon Ga-Min tanpa ragu berjuang melindungi mereka agar kelompok belajar tersebut tetap bertahan dan terus berjalan.
+</p>
+</div>
+</section>
+    
+<section>
+<div class="card poster">
+<h2>Poster Drama</h2>
+<img src="poster.jpg">
+</div>
+</section>  
+    
+<section id="story">
+<div class="card">
+<h2>Informasi Drama</h2>
+<p>
+<b>Judul:</b> Study Group<br>
+<b>Hangul:</b> 스터디그룹<br>
+<b>Director:</b> Lee Jang-Hoon, Yoo Beom-sang<br>
+<b>Writer:</b> Shin Hyeong-Wook, Yoo Seung-Yeon, Eom Sun-Ho, Oh Bo-hyun<br>
+<b>Episodes:</b> 10<br>
+<b>Durasi:</b> ±50 menit<br>
+<b>Genre:</b> Laga, Komedi, Remaja, Kedewasaan<br>
+<b>Produksi:</b> Ylab Plex<br>
+<b>Network:</b> TVING<br>
+<b>Rilis:</b> 23 Januari – 20 Februari 2025
+<p>
+<b>Where to watch?</b> Platform resmi seperti Vidio & Viu
+</p>
 </section>
 
 <section id="characters">
-  <h2 class="section-title">Karakter</h2>
+<div class="card">
+<h2>Karakter - karakter Protagonis</h2>
 
-  <h3>Protagonis</h3>
-  <div class="char-group">
-    <div class="char-card">
-      <span class="label">Protagonis</span>
-      <img src="img/Yoon Gamin.jpg">
-      <h3>Yoon Ga Min</h3>
-      <p>Petarung kuat dengan tekad besar untuk belajar.</p>
-    </div>
+<div class="characters">
 
-    <div class="char-card">
-      <span class="label">Protagonis</span>
-      <img src="img/Kim Sehyun.jpg">
-      <h3>Kim Se Hyun</h3>
-      <p>Jenius akademik, lemah fisik, setia pada Ga Min.</p>
-    </div>
+<div class="character">
+<img src="Yoon Gamin.jpg">
+<h3>Yoon Ga-min (윤가민)</h3>
+<p>Sang karakter utama dalam drama Study Group Yoon Ga-min, dikenal sebagai sosok yang tidak pandai dalam hal akademik. Namun, ia sangat pandai dalam bertarung, ia juga tetap ambisius dalam belajar. Untuk mewujudkan cita-citanya masuk universitas, Ga-min memilih sekolah yang murid-muridnya sering terlibat pertengkaran. Pilihan ini dia buat agar bisa fokus belajar. Sayangnya, justru dia harus berkelahi demi memperjuangkan cita-citanya.</p>
+</div>
 
-    <div class="char-card">
-      <span class="label">Protagonis</span>
-      <img src="img/Lee Jiwoo.jpg">
-      <h3>Lee Ji Woo</h3>
-      <p>Petarung judo, keras namun membenci ketidakadilan.</p>
-    </div>
+<div class="character">
+<img src="Kim Sehyun.jpg">
+<h3>Kim Se-hyun (김세현)</h3>
+<p>Anggota study group yang jenius dan cerdas, Kim Se-hyun, tetapi sangat lemah dan tidak ahli dalam bela diri namun memiliki nilai tertinggi di angkatannya dan dia mau membantu Ga-min belajar. Meskipun mendapatkan juara, namun orang tuanya memiliki pendapat lain. Orang tua Se-hyun berpikir lebih baik bekerja dibanding belajar. Keadaan seperti itu justru membuat Ga-min semakin semangat mengajak Se-hyun untuk masuk ke kelompok belajarnya.</p>
+</div>
 
-    <div class="char-card">
-      <span class="label">Protagonis</span>
-      <img src="img/lee-jun.jpg">
-      <h3>Lee Jun</h3>
-      <p>Terobsesi peringkat fisik, lalu belajar arti kekuatan.</p>
-    </div>
+<div class="character">
+<img src="Lee Jiwoo.jpg">
+<h3>Lee Ji-woo (이지우)</h3>
+<p>Siswi anggota study group yang sinis dan berkepribadian keras, namun rendah hati dan benci ketidakadilan. Ji-woo, adalah orang kedua yang bergabung ke kelompok belajar bersama Ga-min dan Kim Se-hyun. Sayangnya dalam perekrutan, mereka Ji-woo terlibat masalah. Hal itu membuat Ga-min ingin menolong Ji-woo agar bisa bergabung serta belajar dengan tenang. Selain memiliki minat belajar, Ji-woo juga ahli dalam seni beda diri yaitu judo.</p>
+</div>
 
-    <div class="char-card">
-      <span class="label">Protagonis</span>
-      <img src="img/chae-heewon.jpg">
-      <h3>Chae Hee Won</h3>
-      <p>Sahabat Ji Woo yang peduli dan berani.</p>
-    </div>
+<div class="character">
+<img src="Chae Heewon.jpg">
+<h3>Chae Hee-won (최희원)</h3>
+<p>Chae Hee-won ini merupakan teman dekat Ji-woo sekaligus yang mengirimkan surat kalau Ji-woo ingin bergabung dengan kelompok belajar. Chae Hee-won meminta agar Ga-min bisa menyelamatkan Ji-woo yang diancam mengenai saudara kembarnya Ji-woo, Lee Hyun-woo. Setelah permasalahan selesai, Hee-woon juga ikut bergabung dengan kelompok belajar milik Ga-min.</p>
+</div>
+    
+<div class="character">
+<img src="Lee Jun.jpg">
+<h3>Lee Jun (이준)</h3>
+<p>Lee Jun yang ini memiliki ketertarikan terhadap juara, berbeda dengan Ga-min yang terobsesi dengan peringkat akademik, Lee Jun justru tertarik dengan peringkat ‘fisik’. Dia selalu mengajak orang lain untuk bertengkar atau beradu fisik, jika dia menang maka peringkatnya akan bertambah. Sayangnya ketika beradu fisik dengan Ga-min, Lee Jun kalah telak. Lee Jun yang menyadari perbedaan dirinya dengan Ga-min memilih bergabung dengan kelompok belajar, agar dia bisa belajar banyak hal dari Ga-min.</p>
+</div>
+    
+<div class="character">
+<img src="Lee Hangyeong.jpg">
+<h3>Lee Han-gyeong (이한경)</h3>
+<p>Guru sementara di SMK Teknik Yusung yang bersemangat dan tulus mendukung visi Ga-min untuk membuat kelompok belajar, sekaligus berusaha memperbaiki sekolah tersebut. Awalnya merupakan guru privat Ga Min sebelum Ga Min masuk SMK Teknik Yusung. Uniknya mereka berdua justru bertemu lagi di SMK itu, sebagai guru dan murid lagi. Melihat tekad kuat Ga Min untuk masuk universitas, Lee Han-gyeong membantu Ga-min untuk membuat kelompok belajar. Kelompok belajar tersebut dibuat agar anak-anak yang ingin fokus belajar bisa saling membantu satu sama lain.</p>
+</div>
+    
+<div class="character">
+<img src="Park Geonyeop.jpg">
+<h3>Park Geon-yeop (박건엽)</h3>
+<p>Geon-yeop adalah karakter dengan emosi yang dalam dan kekuatan yang tersembunyi. Kehilangan ibunya karena tragedi misterius membuatnya hidup dalam tekanan dan dendam. Di balik penampilannya yang tenang, Geon-yeop memiliki insting bertarung yang tajam dan keberanian untuk menantang musuh sekuat apa pun. Karakternya tumbuh dari trauma menjadi kekuatan yang sulit dihentikan ketika motivasinya tersulut.</p>
+</div>
 
-    <div class="char-card">
-      <span class="label">Protagonis</span>
-      <img src="img/Lee Hangyeong.jpg">
-      <h3>Lee Han Gyeong</h3>
-      <p>Guru yang percaya pendidikan bisa mengubah segalanya.</p>
-    </div>
-  </div>
-
-  <h3 style="margin-top:30px">Antagonis & Anti-Hero</h3>
-  <div class="char-group">
-    <div class="char-card antagonis">
-      <span class="label">Antagonis</span>
-      <img src="img/Phi Hanwool.jpg">
-      <h3>Phi Han Wool</h3>
-      <p>Penguasa sekolah dan musuh utama Ga Min.</p>
-    </div>
-
-    <div class="char-card antagonis">
-      <span class="label">Antagonis</span>
-      <img src="img/ma-minhwan.jpg">
-      <h3>Ma Min Hwan</h3>
-      <p>Tangan kanan Han Wool yang angkuh.</p>
-    </div>
-
-    <div class="char-card antagonis">
-      <span class="label">Antagonis</span>
-      <img src="img/lee-hyunwoo.jpg">
-      <h3>Lee Hyun Woo</h3>
-      <p>Siswa bermasalah dengan masa lalu kelam.</p>
-    </div>
-
-    <div class="char-card antihero">
-      <span class="label">Anti-Hero</span>
-      <img src="img/park-geonyeop.jpg">
-      <h3>Park Geon Yeop</h3>
-      <p>Didorong dendam, kekuatannya lahir dari trauma.</p>
-    </div>
-  </div>
+</div>
+</div>
 </section>
+    
+<section id="characters">
+<div class="card">
+<h2>Karakter - karakter Antagonis</h2>
+    
+<div class="characters">
 
+<div class="character">
+<img src="Phi Hanwool.jpg">
+<h3>Phi Han-wool</h3>
+<p>Antagonis utama. Pewaris YB Group dan kekuatan dominan di SMK Teknik Yusung. Ia adalah antagonis utama yang mengatur perundungan dan mendominasi sekolah. Han-wool tokoh utama sekaligus antagonis di drama ini. Phi Han-wool tidak hanya terkenal tampan, namun dia juga orang nomor satu di sekolahnya. Bukan tanpa sebab, Han-wool merupakan anak dari pemimpin geng ternama, White Lead, Phi Yeon-baek. Kehadiran Phi Han-wool membuat drama ini semakin seru, terlebih konflik antara dia dan Ga-min.
+</p>
+</div>  
+   
+<div class="character">
+<img src="Ma Minhwan.jpg">
+<h3>Ma Min-hwan</h3>
+<p>Ma Min-hwan hampir selalu terlihat bersama Pi Han-wool di drakor Study Group, ia seperti tangan kanan Pi Han-wool, yang mempunyai aura berbeda. Pi Han-wool berekspresi dingin, sementara Ma Min-hwan sangat angkuh dan tengil.</p>
+</div>
+   
+<div class="character">
+<img src="Lee Hyunwoo.jpg">
+<h3>Lee Hyun-woo</h3>
+<p>Lee Hyun-qoo dikenal sebagai salah satu siswa pembuat onar di drakor Study Group. Ia tidak niat belajar di sekolah dan banyak berkelahi. Bukan hanya merundung siswa lain, ia bahkan menyerang gurunya sendiri. Lalu terungkap beberapa realitas baru mengenai sisi lain Lee Hyun-woo, ia nyatanya bukan siswa yang nakal akan tetapi kehidupannya dan kakak kembarnya yang sulit membuatnya salah jalan.</p>
+</div>
+    
+</div>
+</div>
+</section>
+    
 <section id="ost">
-  <h2 class="section-title">OST</h2>
-  <div class="card audio-box">
-    <img src="img/ost-cover.jpg" alt="OST Cover">
-    <p><b>Backpacker</b><br>
-    Study Group OST Part 1</p>
+<div class="card">
+<h2>OST – BACK PACKER</h2>
 
-    <!-- EMBED YOUTUBE -->
-    <iframe width="100%" height="90"
-      src="https://www.youtube.com/embed/7gb8xOAPX3Y"
-      title="Backpacker OST"
-      frameborder="0"
-      allow="accelerometer; clipboard-write; encrypted-media; gyroscope"
-      allowfullscreen>
-    </iframe>
-
-    <p style="font-size:13px;margin-top:10px">
-      Sumber: YouTube (Official) • Digunakan untuk keperluan edukasi
-    </p>
-  </div>
+<iframe width="100%" height="200"
+src="https://www.youtube.com/embed/7gb8xOAPX3Y"
+allowfullscreen></iframe>  
+    
+<p style="text-align:center;">🎧 Music from Original TVING Series</p>
+</div>
 </section>
-
+    
 <footer>
-  <p>Website Statis HTML • Study Group</p>
-  <p>Dibuat oleh: Mardhiyah Zahra XI-11</p>
+<p>Website Statis HTML • Study Group</p>
+<p>Dibuat oleh: <b>Mardhiyah Zahra XI-11</b></p>
 </footer>
 
 </body>
